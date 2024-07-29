@@ -1,12 +1,10 @@
-#github的重制版，基本一样，没用路由和多了些注释而已
 
-https://github.com/yanmengssss/Russia-Block-Reset-.git
 
 #这里是没有打包过的，具体打包教程看我的博客
 
 https://blog.csdn.net/m0_73459939/article/details/140742301
 
-#博客教程:
+#完整教程博客:
 https://blog.csdn.net/m0_73459939/article/details/140774406
 
 #首先npm install 下载，
