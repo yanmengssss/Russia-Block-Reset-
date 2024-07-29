@@ -1,0 +1,55 @@
+{
+  "name": "demotest",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "main.js",
+  "description": "Russia cubes",
+  "author": "Ye",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "electron .",
+    "exe-build": "electron-builder"
+  },
+  "build": {
+    "appId": "Ye.russiacubes",
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "preload.js",
+      "index.html",
+      "src/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "asarUnpack": [
+      "main.js",
+      "preload.js"
+    ],
+    "win": {
+      "icon": "src/assets/icon.ico",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "cnpm": "^9.4.0",
+    "element-plus": "^2.7.8",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3",
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-vue-components": "^0.27.3",
+    "vite": "^5.3.1"
+  }
+}
